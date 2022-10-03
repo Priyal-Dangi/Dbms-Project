@@ -1,0 +1,287 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+     
+ ul{
+     list-style-type:none;
+     padding: 0px;
+     margin:0px;
+     overflow: hidden;
+     background-color: transparent;
+ }
+ li{
+                display: inline;
+                float:right;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                
+            }
+            li:hover{
+                
+                background-color:black;
+        }
+        h1:hover{
+                text-transform: uppercase;
+                color: crimson;
+            }
+            h2:hover{
+                color:brown;
+                text-decoration: solid underline;
+                text-decoration-color: blueviolet ;
+                
+                
+                
+                
+            }
+           
+            :focus {
+  outline: none; }
+  .button {
+  background-color:cadetblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+  .container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+</style>
+<script type="text/javascript">
+        
+  var info=["Home","About Us","Contact","Services","Event","Activities","Food","Login"];
+  
+
+</script>
+  </head>
+  <body>
+     
+    <h1 align="left" style="font-family:cursive;"id="sc"> 
+        Staycation </h1>
+
+    <div style=" width: 100%;background-color:  #343c42;">
+        
+        
+        <ul>
+            <li>
+                
+             <a style="text-decoration:lavenderblush;color: white;" href="login.html"><script> document.write(info[7]);</script>  </a>
+            </li>
+            <li>
+                <a style="text-decoration: lavenderblush;color: white;"href="food.html"> <script> document.write(info[6]) </script></a>
+            </li>
+            <li>
+                <a style="text-decoration: lavenderblush;color: white;"href="ent.html"> <script> document.write(info[5]) </script></a>
+            </li>
+            <li>
+                <a style="text-decoration: lavenderblush;color: white;"href="events.html"> <script> document.write(info[4]) </script></a>
+
+            </li>
+            <li> <a style="text-decoration: lavenderblush;color: white;" href="services.html"> <script> document.write(info[3]) </script></a>
+            </li>
+            <li> <a style="text-decoration: lavenderblush;color: white;" href="event.html"> <script> document.write(info[2]) </script></a></li>
+            <li> <a style="text-decoration: lavenderblush;color: white;" href="home.html"> <script> document.write(info[1]) </script> </a></li>
+            <li>  <a style="text-decoration: lavenderblush;color: white;" href="h.html"> <script> document.write(info[0]) </script> </a></li>
+        </ul>
+
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="container" style="margin-left: 50px;">
+          <div class="content">
+            
+            <div class="right-side">
+              <div class="topic-text">Feedback</div>
+              <p>In case of any queries or reservation requests please reach out to our Contact Centre.  you can send message from here. It'll pleasure to help you.</p>
+            
+              <div class="input-box">
+                <form action="datar.php" method="post">
+                <input type="text" placeholder="Enter your name" name="name">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" name="mail">
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your number" name="number">
+              </div>
+              <div class="input-box message-box">
+                
+              </div>
+              <script type="text/javascript">
+                  function aj(){
+                      alert("We will contact you soon");
+                      window.location="event.html";
+                  }
+              </script>
+              
+                <input type="submit" onclick=aj(); value="Send Now" class="button" >
+                </form>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+       
+          
+    
+    </div>
+
+        <div style="background-color:#1f3646; height: 300px; padding: 0px;">
+            <p align="left" style="font-family: cursive;color: aliceblue;" > Copyright:2019-2021</p>
+            <p align="center" style="font-family: cursive;color: aliceblue; font-size: larger;"> Social Media links </p> <a href="facebook.com/staycation">
+            <p align="center" style="font-family: cursive;color: aliceblue;"> facebook.com/staycation </p> </a> <a href="instagram.com/staycation">
+            <p align="center" style="font-family: cursive;color: aliceblue;"> instagram.com/staycation </p> </a> <a href="linked.com/staycation">
+            <p align="center" style="font-family: cursive;color: aliceblue;"> linkedin.com/staycation </p> </a> <a href="faq.html">
+            <p align="right" style="font-family: cursive;color: aliceblue;position: absolute;right:100px;bottom:100px;"> FAQs </p> </a>
+
+        </div>
+    </body>
+</html>
